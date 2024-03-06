@@ -26,7 +26,7 @@ hooks:
     - location: scripts/install_dependencies.sh
       runas: root
   ApplicationStart:
-    - location: scripts/start_dash.sh
+    - location: scripts/run_python.sh
       timeout: 300
       runas: root
   ApplicationStop:
