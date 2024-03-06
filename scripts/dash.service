@@ -3,7 +3,7 @@ Description=Road Crash Dash
 After=multi-user.target
 [Service]
 Type=simple
-Restart=always
+Restart=on-failure
 ExecStart=/usr/bin/python3 /home/ubuntu/app.py -f /home/ubuntu/crash_data.csv
 [Install]
 WantedBy=multi-user.target
